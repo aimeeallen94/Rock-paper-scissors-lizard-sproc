@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;500&display=swap');
+
+h1 {
+    text-transform: uppercase;
+    font-family: Poppins;
+    color: #2A2D43;
+    text-align: center;
+    padding: 20px;
+
+}
+
+body {
+    font-family: Poppins;
+    color: #2A2D43;
+    text-align: center;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.btn::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #2A2D43;
+    position: relative;
+    text-transform: capitalize;
+}

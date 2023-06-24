@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Inserting font awesome script-->
+    <script src="https://kit.fontawesome.com/4fda016be7.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
+
 <body>
-    
+    <h1 class="heading">Rock, Paper Scissors, Lizard, Spock
+        <br>
+        <img class="heading-image" src="assets/images/rpsls.jpeg" alt="Rock, Paper, Scissors, Lizard, Spock Image">
+    </h1>
+
+    <div class="choice-area">Make your choice here:
+        <button data-type='rock' class="btn">
+            <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button data-type='paper' class="btn">
+            <i class="fa-solid fa-hand"></i>
+        </button>
+        <button data-type='scissors' class="btn">
+            <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+        <button data-type='lizard' class="btn">
+            <i class="fa-solid fa-hand-lizard"></i>
+        </button>
+        <button data-type='spock' class="btn">
+            <i class="fa-solid fa-hand-spock"></i>
+        </button>
+
+    </div>
+
+    <div class="results-area">
+        <p>The computer chooses:</p>
+        <p>I choose:</p>
+
+    </div>
+
+    <div class="score-area">
+        <p class="scores">My Score:<span id="my-scores">0</span></p>
+        <p class="scores">Computer Score:<span id="computer-scores">0</span></p>
+
+    </div>
+
     <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
