@@ -20,19 +20,19 @@
     </h1>
 
     <div class="choice-area">Make your choice here:
-        <button id='Rock' data-type='rock' class="btn">
+        <button id='Rock' data-type='rock' class="btn" aria-label="Rock Button">
             <i class="fa-solid fa-hand-back-fist"></i>
         </button>
-        <button id='Paper' data-type='paper' class="btn">
+        <button id='Paper' data-type='paper' class="btn" aria-label="Paper Button">
             <i class="fa-solid fa-hand"></i>
         </button>
-        <button id='Scissors' data-type='scissors' class="btn">
+        <button id='Scissors' data-type='scissors' class="btn" aria-label="Scissors Button">
             <i class="fa-solid fa-hand-scissors"></i>
         </button>
-        <button id='Lizard' data-type='lizard' class="btn">
+        <button id='Lizard' data-type='lizard' class="btn" aria-label="Lizard Button">
             <i class="fa-solid fa-hand-lizard"></i>
         </button>
-        <button id='Spock' data-type='spock' class="btn">
+        <button id='Spock' data-type='spock' class="btn" aria-label="Spock Button">
             <i class="fa-solid fa-hand-spock"></i>
         </button>
     </div>
@@ -49,7 +49,9 @@
     <div class="score-area">
         <p class="scores">My Score: <span id="my-score">0</span></p>
         <p class="scores">Computer Score: <span id="computer-score">0</span></p>
+    </div>
 
+    <div>Tries Remaining: <span id="tries-remaining">10</span>
     </div>
 
     <script src="assets/javascript/script.js"></script>

@@ -8,6 +8,7 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (even
     computerSelection();
     compareAnswers();
     incrementScores();
+    triesRemaining();
 }));
 
 function runGame() { };
@@ -62,8 +63,7 @@ function compareAnswers() {
     }
     if (computerChoice === 'Paper' && myPick === 'Spock') {
         result = `${computerChoice} disproves ${myPick}, Computer Wins :(`;
-    }
-    if (computerChoice === 'Scissors' && myPick === 'Rock') {
+    } if (computerChoice === 'Scissors' && myPick === 'Rock') {
         result = `${myPick} crushes ${computerChoice}, You Win!`;
     }
     if (computerChoice === 'Scissors' && myPick === 'Paper') {
@@ -154,5 +154,21 @@ function incrementScores() {
         document.getElementById('computer-score').innerText = ++computerScore;
     }
 };
-function incrementAttempts() { };
 
+
+/*let triesRemaining = document.getElementById('tries-remaining');
+array.from(document.getElementsByTagName('button')).addEventListener('click', (event) => {
+    triesRemaining -= 1;
+}; */
+
+
+function triesRemaining() {
+    /*let myScore = document.getElementById('my-score');
+    let computerScore = document.getElementById('computer-score');
+
+    if (computerScore === 10) {
+        alert('Computer is the overall winner!! Please refresh if you would like to try again!');
+    } else if (myScore === 10) {
+        alert('Congratulations you are the overall winner!!');
+    }*/
+};
