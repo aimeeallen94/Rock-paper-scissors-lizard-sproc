@@ -109,16 +109,13 @@ function incrementScores() {
     let myScore = parseInt(document.getElementById('my-score').innerText);
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
 
-
     if (myPick === computerChoice) {
         document.getElementById('my-score').innerText = ++myScore;
-        document.getElementById('computerScore').innerText = ++computerScore;
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else (myPick === 'Rock' && computerChoice === 'Paper') {
+        document.getElementById('computer-score').innerText = ++computerScore;
     }
+
 };
-
-
-function incrementComputerScore() { };
-
-
 function incrementAttempts() { };
 
