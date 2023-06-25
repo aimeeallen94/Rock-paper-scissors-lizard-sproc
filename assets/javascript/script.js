@@ -43,10 +43,10 @@ function compareAnswers() {
         result = `${computerChoice} cover ${myPick}, You Win!`;
     }
     if (computerChoice === 'Rock' && myPick === 'Scissors') {
-        result = `${computerChoice} crushes ${myPick}, You lose :(`;
+        result = `${computerChoice} crushes ${myPick}, Computer Wins :(`;
     }
     if (computerChoice === 'Rock' && myPick === 'Lizard') {
-        result = `${computerChoice} crushes ${myPick}, You lose :(`;
+        result = `${computerChoice} crushes ${myPick}, Computer Wins :(`;
     }
     if (computerChoice === 'Rock' && myPick === 'Spock') {
         result = `${myPick} vaporises ${computerChoice}, You Win!`;
@@ -112,10 +112,47 @@ function incrementScores() {
     if (myPick === computerChoice) {
         document.getElementById('my-score').innerText = ++myScore;
         document.getElementById('computer-score').innerText = ++computerScore;
-    } else (myPick === 'Rock' && computerChoice === 'Paper') {
+    } else if (myPick === 'Rock' && computerChoice === 'Paper') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Rock' && computerChoice === 'Scissors') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Rock' && computerChoice === 'Lizard') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Rock' && computerChoice === 'Spock') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Paper' && computerChoice === 'Rock') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Paper' && computerChoice === 'Scissors') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Paper' && computerChoice === 'Lizard') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Paper' && computerChoice === 'Spock') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Scissors' && computerChoice === 'Rock') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Scissors' && computerChoice === 'Paper') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Scissors' && computerChoice === 'Lizard') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Scissors' && computerChoice === 'Spock') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Lizard' && computerChoice === 'Rock') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Lizard' && computerChoice === 'Paper') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Lizard' && computerChoice === 'Scissors') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Lizard' && computerChoice === 'Spock') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Spock' && computerChoice === 'Rock') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Spock' && computerChoice === 'Paper') {
+        document.getElementById('computer-score').innerText = ++computerScore;
+    } else if (myPick === 'Spock' && computerChoice === 'Scissors') {
+        document.getElementById('my-score').innerText = ++myScore;
+    } else if (myPick === 'Spock' && computerChoice === 'Lizard') {
         document.getElementById('computer-score').innerText = ++computerScore;
     }
-
 };
 function incrementAttempts() { };
 
