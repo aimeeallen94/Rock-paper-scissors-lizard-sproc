@@ -13,7 +13,7 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (even
     incrementScores();
 }));
 
-function runGame() { };
+function runGame() { }
 
 /* Generating random computer selection and by generating a random number and assigning a value to each number */
 function computerSelection() {
@@ -160,26 +160,15 @@ function incrementScores() {
     triesRemaining();
 };
 
-
-/*let triesRemaining = document.getElementById('tries-remaining');
-array.from(document.getElementsByTagName('button')).addEventListener('click', (event) => {
-    triesRemaining -= 1;
-}; */
-
-
-
 function triesRemaining() {
     document.getElementById('tries-remaining').innerText = tries--;
 
-    if (tries === 0)
-        alert('Game over');
-
-    /*let myScore = document.getElementById('my-score');
-    let computerScore = document.getElementById('computer-score');
- 
-    if (computerScore === 10) {
-        alert('Computer is the overall winner!! Please refresh if you would like to try again!');
-    } else if (myScore === 10) {
-        alert('Congratulations you are the overall winner!!');
-    }*/
+    if (tries === -1) {
+        alert(`GAME OVER, please try again :D.`);
+        document.location.reload();
+    } 
+    /*if (computerScore > myScore) {
+        alert('Computer wins this game')
+    } if else (myScore > computerScore)*/
+       
 };

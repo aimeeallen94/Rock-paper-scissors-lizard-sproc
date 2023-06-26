@@ -29,6 +29,10 @@ div {
     height: 100px;
 }
 
+.btn:hover {
+    border: 2px solid #2A2D43;
+}
+
 .btn::after {
     content: attr(data-type);
     font-size: 1rem;
