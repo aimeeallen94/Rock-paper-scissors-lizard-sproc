@@ -1,23 +1,26 @@
 let myChoice = document.getElementById('my-choice');
 let choices = Array.from(document.getElementsByTagName('button'));
+let tries = parseInt(document.getElementById('tries-remaining').innerText);
 let myPick;
 
+
+/* Creating event listener for when any of the choices are clicked */
 choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (event) => {
     myPick = event.target.id;
     myChoice.innerHTML = myPick;
     computerSelection();
     compareAnswers();
     incrementScores();
-    triesRemaining();
 }));
 
 function runGame() { };
 
+/* Generating random computer selection and by generating a random number and assigning a value to each number */
 function computerSelection() {
 
     let computerChoiceDisplay = document.getElementById('computer-choice');
 
-    /* code for generating random number for computer selection */
+    /* Code for generating random number for computer selection */
     let randomNumber = Math.floor(Math.random() * 6 + 1);
     if (randomNumber === 1) {
         computerChoice = 'Rock';
@@ -33,6 +36,7 @@ function computerSelection() {
     computerChoiceDisplay.innerHTML = computerChoice;
 }
 
+/* Deciding if the computer or player won based on results */
 function compareAnswers() {
     let result;
     let resultDisplay = document.getElementById('result');
@@ -104,7 +108,7 @@ function compareAnswers() {
 
 };
 
-
+/* Tallying scores of computer and player based on results */
 function incrementScores() {
     let myScore = parseInt(document.getElementById('my-score').innerText);
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
@@ -153,6 +157,7 @@ function incrementScores() {
     } else if (myPick === 'Spock' && computerChoice === 'Lizard') {
         document.getElementById('computer-score').innerText = ++computerScore;
     }
+    triesRemaining();
 };
 
 
@@ -162,10 +167,16 @@ array.from(document.getElementsByTagName('button')).addEventListener('click', (e
 }; */
 
 
+
 function triesRemaining() {
+    document.getElementById('tries-remaining').innerText = tries--;
+
+    if (tries === 0)
+        alert('Game over');
+
     /*let myScore = document.getElementById('my-score');
     let computerScore = document.getElementById('computer-score');
-
+ 
     if (computerScore === 10) {
         alert('Computer is the overall winner!! Please refresh if you would like to try again!');
     } else if (myScore === 10) {
