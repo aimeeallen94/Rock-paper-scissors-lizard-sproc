@@ -1,39 +1,25 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Rock, Paper, Scissors, Lizard, Spock
+Rock, Paper, Scissors, Lizard, Spock is a game of chance that is an extended version of the traditional game Rock, Paper, Scissors. This extended version increases the choices from three to five options. This game was first seen in the television show The Big Bang Theory where two of the main characters, Sheldon and Raj, use this to settle a dispute in deciding what to watch on television.
+This game is a brilliant decision maker for families, friends and colleagues and the benefit of playing against the computer is that the results of your opponent are completely random and therefore are always impartial and unpredictable.
+Features
+Header
+Within the header at the top of the page the title of the website: Rock, Paper, Scissors, Lizard, Spock can be seen along with an image illustrating the game itself. The font colour stands out clearly from the background and can be easily seen. The font colour also matches the background colour in the image which sets up the website well.
 
-Welcome,
+Game Options
+The options area consists of an instruction to tell the user to make a choice from the five interactive buttons as their options: Rock, Paper, Scissors, Lizard or Spock. These interactive buttons allow them to be selected by a user to confirm their choice.
+These buttons are also interactive that the border on these buttons when hovered over increases in size making it very clear for the user to see which option they are considering.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Game Choices
+When the user selects their option it is displayed as a choice below the buttons with a label saying My Choice:.
+As a result of the user selecting their option the JavsScript Code has been programmed to display a computer choice. This was done by generating a random number between 1 and 5 and assigning the values from 1 to 5 to each of these options. The computer choice is displayed simultaneously with the users choice.
+By displaying both the users choice and computer choice it is very clear to the user who has chosen what option.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+Game Results
+Below the choices there is a Result area. This area displays the winner of the game.
+The JavaScript code has been programmed with an event listener so that at the same time the user selects their option, their choice and the computer choice displays and the result of who won the game displays in an understandable format, for example, 'Lizard poisions Spock'. Each potential user and computer choice has been assigned so that a result displays for every choice including if both the user and computer select the same option.
 
-## Codeanywhere Reminders
+Game Scores Tally
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+Tries Remaining
 
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+Footer

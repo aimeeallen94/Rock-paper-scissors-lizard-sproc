@@ -41,6 +41,20 @@ div {
     text-transform: capitalize;
 }
 
+h2 {
+    padding: 5px;
+}
+
+footer {
+    background-color: #2A2D43;
+    color: white;
+}
+
+#rules {
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+
 /*Media Query for Mobile Devices of 550px and below*/
 @media screen and (max-width: 550px) {
     img {
