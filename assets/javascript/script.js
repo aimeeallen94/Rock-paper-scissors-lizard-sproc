@@ -67,7 +67,8 @@ function compareAnswers() {
     }
     if (computerChoice === 'Paper' && myPick === 'Spock') {
         result = `${computerChoice} disproves ${myPick}, Computer Wins :(`;
-    } if (computerChoice === 'Scissors' && myPick === 'Rock') {
+    }
+    if (computerChoice === 'Scissors' && myPick === 'Rock') {
         result = `${myPick} crushes ${computerChoice}, You Win!`;
     }
     if (computerChoice === 'Scissors' && myPick === 'Paper') {
@@ -160,15 +161,25 @@ function incrementScores() {
     triesRemaining();
 };
 
+/* Max 10 tries available in this game, deducting one attempt of the user after each option selected */
 function triesRemaining() {
-    document.getElementById('tries-remaining').innerText = tries--;
+    document.getElementById('tries-remaining').innerText = --tries;
 
-    if (tries === -1) {
-        alert(`GAME OVER, please try again :D.`);
+    if (tries === 0) {
+        displayWinner();
         document.location.reload();
-    } 
-    /*if (computerScore > myScore) {
-        alert('Computer wins this game')
-    } if else (myScore > computerScore)*/
-       
+    }
 };
+
+function displayWinner() {
+    let myFinalScore = parseInt(document.getElementById('my-score').innerText);
+    let computerFinalScore = parseInt(document.getElementById('computer-score').innerText);
+
+    if (myFinalScore > computerFinalScore) {
+        alert('GAME OVER. You won!!!');
+    } else if (computerFinalScore > myFinalScore) {
+        alert('GAME OVER. Computer wins!!');
+    } else {
+        alert('GAME OVER. Draw!!!');
+    }
+}
