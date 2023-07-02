@@ -3,6 +3,8 @@
 - Rock, Paper, Scissors, Lizard, Spock is a game of chance that is an extended version of the traditional game Rock, Paper, Scissors. This extended version increases the choices from three to five options. This game was first seen in the television show The Big Bang Theory where two of the main characters, Sheldon and Raj, use this to settle a dispute in deciding what to watch on television.
 - This game is a brilliant decision maker for families, friends and colleagues and the benefit of playing against the computer is that the results of your opponent are completely random and therefore are always impartial and unpredictable.
 
+![Am-I-Responsive](/assets/images-readme/am-i-responsive.png)
+
 ## Features
 
 ### Header
@@ -25,14 +27,14 @@
 - As a result of the user selecting their option the JavsScript Code has been programmed to display a computer choice. This was done by generating a random number between 1 and 5 and assigning the values from 1 to 5 to each of these options. The computer choice is displayed simultaneously with the users choice.
 - By displaying both the users choice and computer choice it is very clear to the user who has chosen what option.
 
-![choices] (/assets/images-readme/choices.png)
+![Choices](/assets/images-readme/choices.png)
 
 ### Game Results
 
 - Below the choices there is a Result area. This area displays the winner of the game.
   -The JavaScript code has been programmed with an event listener so that at the same time the user selects their o ption, their choice and the computer choice displays and the result of who won the game displays in an understandable format, for example, 'Lizard poisions Spock'. Each potential user and computer choice has been assigned so that a result displays for every choice including if both the user and computer select the same option.
 
-![Results] (/assets/images-readme/results.png)
+![Results](/assets/images-readme/results.png)
 
 ### Game Scores Tally
 
@@ -58,7 +60,7 @@ The tries remaining function has been set up by targeting the total number of tr
 - The footer continues the style of the page with the same font and background colour to maintain uniformity throughout this webpage.
 - The footer contains the rules of Rock, Paper, Scissors, Lizard, Spock so that the user can refer to these rules to understand the scoring of this game and to provide clarity.
 
-![Footer] (/assets/images-readme/footer.png)
+![Footer](/assets/images-readme/footer.png)
 
 ## Features Left to Implement
 
@@ -84,9 +86,9 @@ The tries remaining function has been set up by targeting the total number of tr
 - I noted that I had used tries-- instead of the --tries for this function.
 - In using tries-- the code was executing the value and it was reading the value after the increment so it was jumping ahead of the code as opposed to when it was changed to --tries the value was read correctly as it was reading the value after the decrement.
 
-![Debugging-Error] (/assets/images-readme/debugging-error.png)
+![Debugging-error](/assets/images-readme/debugging-error.png)
 
-![Debugging-Fixed] (/assets/images-readme/debugging-fixed.png)
+![Debugging-Fixed](/assets/images-readme/debugging-fixed.png)
 
 ## Validator Testing
 
@@ -94,13 +96,13 @@ The tries remaining function has been set up by targeting the total number of tr
 
 - I ran the HTML code through the W3C Markup Validation Service and no errors were found.
 
-![Html-testing] (/assets/images-readme/html-testing.png)
+![Html-testing](/assets/images-readme/html-testing.png)
 
 ### CSS
 
 - I ran the CSS code through the W3C CSS Validation Service and no errors were found.
 
-![Css-testing] (/assets/images-readme/css-testing.png)
+![Css-testing](/assets/images-readme/css-testing.png)
 
 ## Unfixed Bugs
 
@@ -115,7 +117,7 @@ The tries remaining function has been set up by targeting the total number of tr
 - On the settings page select Pages from the menu of the left of the page
 - On the GitHub Pages under Build and Deployment ensure source reads Deploy from a Branch and branch drop down menus read main and root respectively
 - Select Save
-- It may take a few moments for the wedpage to be deployed and for a box to appear under GitHub pages but once it appears the link can be copied and used as needed.
+- It may take a few moments for the webpage to be deployed and for a box to appear under GitHub pages but once it appears the link can be copied and used as needed.
 - The live link can be found
 
 ## Credits
