@@ -3,7 +3,7 @@
 - Rock, Paper, Scissors, Lizard, Spock is a game of chance that is an extended version of the traditional game Rock, Paper, Scissors. This extended version increases the choices from three to five options. This game was first seen in the television show The Big Bang Theory where two of the main characters, Sheldon and Raj, use this to settle a dispute in deciding what to watch on television.
 - This game is a brilliant decision maker for families, friends and colleagues and the benefit of playing against the computer is that the results of your opponent are completely random and therefore are always impartial and unpredictable.
 
-![Am-I-Responsive](/assets/images-readme/am-i-responsive.png)
+![Am-I-Responsive](/assets/images-readme/am-i-responsive1.png)
 
 ## Features
 
