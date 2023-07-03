@@ -13,7 +13,6 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (even
     incrementScores();
 }));
 
-function runGame() { }
 
 /* Generating random computer selection and by generating a random number and assigning a value to each number */
 function computerSelection() {
