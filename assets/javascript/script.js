@@ -1,6 +1,7 @@
 let myChoice = document.getElementById('my-choice');
 let choices = Array.from(document.getElementsByTagName('button'));
 let tries = parseInt(document.getElementById('tries-remaining').innerText);
+let computerChoice = document.getElementById('computer-choice');
 let myPick;
 
 
@@ -106,7 +107,7 @@ function compareAnswers() {
 
     resultDisplay.innerHTML = result;
 
-};
+}
 
 /* Tallying scores of computer and player based on results */
 function incrementScores() {
@@ -158,7 +159,7 @@ function incrementScores() {
         document.getElementById('computer-score').innerText = ++computerScore;
     }
     triesRemaining();
-};
+}
 
 /* Max 10 tries available in this game, deducting one attempt of the user after each option selected */
 function triesRemaining() {
@@ -168,7 +169,7 @@ function triesRemaining() {
         displayWinner();
         document.location.reload();
     }
-};
+}
 
 function displayWinner() {
     let myFinalScore = parseInt(document.getElementById('my-score').innerText);

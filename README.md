@@ -65,7 +65,7 @@ The tries remaining function has been set up by targeting the total number of tr
 ## Features Left to Implement
 
 - When I have more time I may expand this game further by trying to display the choices the user and computer select as the buttons that are selected as users choice, so that a button displays rather than words so that it may appear clearer for the user and may provided further interactivity to the game.
-- I also had seen a tutorial which utilised emojis for user options to select which I would like to expand on further for this project in time.
+- When I have more time I would consider changing the displaying of the winner of the game from an alert box to a div that is hidden until the displayWinner function is called. This would avoid browsers prompting users to ignore the pop up alerting the winner of the game and thus potentially affecting the performance of the game.
 
 ## Testing
 
@@ -77,6 +77,9 @@ The tries remaining function has been set up by targeting the total number of tr
 - I have verified that the header, footer, choices, results and tries remaining are all displaying as expected and are easy to understand for all users.
 - The colours selected for the background colours and fonts are easy to read and the contrast is sufficient so that it can be easily read. I validated my thoughts by running the webpage through Lighthouse in DevTools.
 - I am pleased to say this webpage is responsive and works well on all screen sizes. I have added a media query to allow for the resizing of the header image on smaller screen widths.
+- This webpage score high marks in all aspects of DevTools Lighthouse testing.
+
+![Lighthouse-testing](/assets/images-readme/lighthouse-testing.png)
 
 ## Bugs
 
@@ -103,6 +106,12 @@ The tries remaining function has been set up by targeting the total number of tr
 - I ran the CSS code through the W3C CSS Validation Service and no errors were found.
 
 ![Css-testing](/assets/images-readme/css-testing.png)
+
+### JavaScript Testing
+
+- I tested the Javascript code through JS Hint and no errors were found.
+
+![JS-testing](/assets/images-readme/js-testing.png)
 
 ## Unfixed Bugs
 
